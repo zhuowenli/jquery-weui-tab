@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="libs/weui.min.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="navbar" id="J_Navbar">
+            <div class="bd" style="height: 100%;">
+                <div class="weui_tab">
+                    <div class="weui_navbar">
+                        <div data-tab="first"  class="weui_navbar_item">选项一</div>
+                        <div data-tab="second" class="weui_navbar_item">选项二</div>
+                        <div data-tab="third"  class="weui_navbar_item weui_bar_item_on">选项三</div>
+                    </div>
+                    <div class="weui_tab_bd">
+                        <div id="first"  class="weui_tab_bd_item">First</div>
+                        <div id="second" class="weui_tab_bd_item">Second</div>
+                        <div id="third"  class="weui_tab_bd_item weui_tab_bd_item_active">Third</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="libs/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="dist/jquery-weui-tab.js"></script>
+    <script type="text/javascript">
+
+        $('#J_Navbar').tab();
+
+        // $('#J_Navbar').tab(function(e) {
+        //     // callback
+        //     console.log(e);
+        // });
+    </script>
+</body>
+</html>
