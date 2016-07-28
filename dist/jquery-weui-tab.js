@@ -30,9 +30,13 @@
             var $this = $(this);
             var tab = $this.data('tab');
             var index = $this.index();
+            var click = parseInt($this[0].dataset.click || 0) + 1;
 
             _tab_.index = index;
             _tab_.tab = tab;
+            _tab_.click = click;
+
+            $this.attr('data-click', click);
 
             if ($this.hasClass('weui_bar_item_on')) {
                 return that.call(_tab_);

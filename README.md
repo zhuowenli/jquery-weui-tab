@@ -31,6 +31,6 @@ $('#J_Navbar').tab();
 
 ```js
 $('#J_Navbar').tab(function(e) {
-    console.log(e); // {index: 0, tab: "first"}
+    console.log(e); // {index: 0, tab: "first", click: 1}
 });
 ```

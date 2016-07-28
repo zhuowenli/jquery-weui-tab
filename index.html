@@ -32,12 +32,12 @@
     <script type="text/javascript" src="dist/jquery-weui-tab.js"></script>
     <script type="text/javascript">
 
-        $('#J_Navbar').tab();
+        // $('#J_Navbar').tab();
 
-        // $('#J_Navbar').tab(function(e) {
-        //     // callback
-        //     console.log(e); // {index: 0, tab: "first"}
-        // });
+        $('#J_Navbar').tab(function(e) {
+            // callback
+            console.log(e); // {index: 0, tab: "first", click: 1}
+        });
     </script>
 </body>
 </html>
